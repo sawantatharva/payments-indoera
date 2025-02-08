@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders — indoera</title>
+  <style>
+    @font-face {
+      font-family: 'Facundo';
+      src: url('facundo-regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Facundo';
+      src: url('facundo-semibold.otf') format('opentype');
+      font-weight: bold;
+    }
+
+    body {
+      font-family: 'Facundo', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    .navbar button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navbar button:hover {
+      background-color: grey;
+    }
+
+    .offer-message {
+      text-align: center;
+      background-color: #f36a24;
+      color: #ffffff;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    .offer-message span {
+      display: inline-block;
+      animation: marquee 40s linear infinite;
+    }
+
+    .orders {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .orders h2 {
+      text-align: center;
+    }
+
+    .orders h3 {
+      text-align: center;
+      color: #444;
+    }
+
+    .order {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .order img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .order button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .order button:hover {
+      background-color: #0056b3;
+    }
+
+    .status {
+      font-weight: bold;
+      color: green;
+    }
+
+    .footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .footer div {
+      margin-bottom: 10px;
+    }
+
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="offer-message">
+    <span>EXPRESS SHIPPING, Buy for min. Rs 2999, get extra 10 percent off, Code: SANJEEDA10</span>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">
+      <a href="https://www.indoera.in/"><img src="logo.png" alt="Indo Era Logo"></a>
+    </div>
+    <a href="https://www.indoera.in/"><button>Log Out</button></a>
+  </div>
+
+  <div class="orders">
+    <h2>Hello Saniya, Your Past Orders.</h2>
+
+    <div class="order">
+      <img src="kurta-set.webp" alt="Indo Era Multi Embroidered A-Line Kurta Palazzos With Dupatta Set">
+      <h3>Indo Era Multi Embroidered A Line Kurta Palazzos With Dupatta Set</h3>
+      <p>SKU: KH9ML6655S</p>
+      <p>Rs. 2,999.00</p>
+      <p class="status">Delivered on 29 Jan 2025</p>
+      <a href="order-details.html"><button>View More Order Details</button></a>
+    </div>
+
+    <h3 style="text-align: center; color: #888;">No more further orders.</h3>
+  </div>
+
+  <div class="footer">
+    <div>Copyright &copy; 2025 Indoera</div>
+  </div>
+
+</body>
+</html>

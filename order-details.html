@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details — Indoera</title>
+  <style>
+    @font-face {
+      font-family: 'Facundo';
+      src: url('facundo-regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Facundo';
+      src: url('facundo-semibold.otf') format('opentype');
+      font-weight: bold;
+    }
+
+    body {
+      font-family: 'Facundo', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    .navbar button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navbar button:hover {
+      background-color: grey;
+    }
+
+    .details {
+      padding: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .details h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .details .info {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #fafafa;
+      border-radius: 5px;
+    }
+
+    .details .info p {
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .status {
+      font-weight: bold;
+      color: green;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .product-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .info button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .info button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button:hover {
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <a href="https://www.indoera.in/"><img src="logo.png" alt="Indo Era Logo"></a>
+    </div>
+    <a href="https://www.indoera.in/"><button>Log Out</button></a>
+  </div>
+
+  <a href="index.html" class="back-button">Back</a>
+
+  <div class="details">
+    <h2>Order Details</h2>
+    <div class="info">
+      <p><strong>Invoice Number:</strong> I2525ZL000971706</p>
+      <p><strong>Packet ID:</strong> 8292527323</p>
+      <p><strong>Order Number:</strong> 128959258733957777901</p>
+      <p><strong>Invoice Date:</strong> 25 Jan 2025</p>
+      <p><strong>Order Date:</strong> 25 Jan 2025</p>
+      <p><strong>Nature of Transaction:</strong> Inter-State</p>
+      <p><strong>Place of Supply:</strong> MAHARASHTRA</p>
+      <p><strong>Nature of Supply:</strong> Goods</p>
+      <p><strong>Bill and Ship to:</strong> Saniya Mehta, New Ladies Hostel, Near BV College of Architecture, Bharti Vidyapeeth Deemed University, Dhankawadi Pune, MH, India</p>
+      <p><strong>Customer Type:</strong> Unregistered</p>
+    </div>
+    <div class="info">
+      <h3>Order Summary</h3>
+      <p><strong>Item:</strong> Indo Era Ethnic Motifs Embroidered Panelled Sequinned A Line Kurta With Palazzos and Dupatta</p>
+      <p><strong>Size:</strong> S</p>
+      <p><strong>Price:</strong> Rs 6599.00</p>
+      <p><strong>Discount:</strong> Rs 3600.00</p>
+      <p><strong>Taxable Amount:</strong> Rs 2639.12</p>
+      <p><strong>IGST:</strong> Rs 359.88</p>
+      <p><strong>Total Amount:</strong> Rs 2999.00</p>
+      <p><strong>Payment Method:</strong> <span style="color: red;">Cash on Delivery</span></p>
+      <p class="status">Delivered on 29 Jan 2025</p>
+    </div>
+    <div class="product-image">
+      <a href="https://www.indoera.in/products/indo-era-multi-embroidered-a-line-kurta-palazzos-with-dupatta-setw6654" target="_blank"><img src="kurta-set.webp" alt="Kurta Set"></a>
+    </div>
+    <div class="info" style="text-align: center;">
+      <a href="invoice.pdf" download><button class="">Download Invoice</button></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>Copyright &copy; 2025 Indoera</div>
+  </div>
+
+</body>
+</html>
